@@ -10,7 +10,15 @@ def mainpage(request):
 	)
 
 def me(request):
-   return HttpResponse("about me")
+    return render(
+    	    request=request,
+    	    template_name="infos/me.html",
+    	    # context=c
+	)
 
 def contact(request):
-   return HttpResponse("my contact")
+    return render(
+    	    request=request,
+    	    template_name="infos/contact.html",
+    	    # context=c
+	)
