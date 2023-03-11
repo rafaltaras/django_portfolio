@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.template import Context, loader
 
 def mainpage(request):
-    return render(request, "infos/base.html", {'navbar': 'base'})
+    return render(request, "infos/mainpage.html", {'navbar': 'mainpage'})
 
 def me(request):
     return render(request, "infos/me.html", {'navbar': 'me'})
